@@ -13,3 +13,7 @@ There are some sanity checks in place, but please change the parameters within r
 | theta | Heel angle of the graver | 2°-20° |
 | s_elevation | The distance between the gliding plane and the grinding surface | 0-100 |
 | s_stickout | THe distance the graver sticks out from the face plane | 0-100 |
+
+Customize at Thingiverse: https://www.thingiverse.com/thing:4818410
+
+Licensed under the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/).
