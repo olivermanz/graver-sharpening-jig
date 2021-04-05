@@ -1,10 +1,29 @@
-//changeable values
-s_elevation = 20;
-s_stickout = 30;
-alpha = 45;
-beta = 105;
-theta = 8;
+/* [Setup] */
+
+//Elevation of the grinding surface over the gliding surface in mm
+s_elevation = 20; // [0:100]
+//Stickout of the graver from the face plate in mm
+s_stickout = 30;  // [0:100]
+
+/* [Angles] */
+
+//Angle of the gravers face
+alpha = 45; // [10:60]
+//Cutting angle of the graver
+beta = 105; // [30:180]
+//Angle of the gravers heel
+theta = 8; // [2:20]
+
+/* [Hidden] */
+
 rampa_opening = 6;
+width = 50;
+thickness = 5;
+workpiece_hole_diameter = 12.2;
+workpiece_holder_height = 20;
+marking_font = "Liberation Sans";
+left = -width / 2;
+right = +width / 2;
 
 assert(alpha >= 10 && alpha <= 60, "Alpha has to be between 10 and 80 degrees");
 assert(beta >= 30 && beta <= 180, "Beta has to be between 30 and 180 degrees");
@@ -14,16 +33,6 @@ assert(s_stickout >= 0 && s_stickout <= 100, "Stickout has to be between 0 and 1
 assert(s_elevation >= 0 && s_elevation <= 100, "Elevation has to be between 0 and 100");
 assert(rampa_opening >= 3 && rampa_opening <= 8, "Opening for screw has to be between 3 and 8");
 
-//fixed values
-width = 50;
-thickness = 5;
-workpiece_hole_diameter = 12.2;
-workpiece_holder_height = 20;
-marking_font = "Liberation Sans";
-
-
-left = -width / 2;
-right = +width / 2;
 
 h1 = (s_stickout * sin(alpha) + s_elevation) / (cos(alpha));
 h2 = (s_stickout * sin(theta) + s_elevation) / (cos(theta) * sin(beta/2));
