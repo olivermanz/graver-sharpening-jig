@@ -1,7 +1,7 @@
 /* [Setup] */
 
 //Elevation of the grinding surface over the gliding surface in mm
-s_elevation = 20; // [0:100]
+s_elevation = 21.7; // [0:100]
 //Stickout of the graver from the face plate in mm
 s_stickout = 30;  // [0:100]
 
@@ -12,14 +12,14 @@ alpha = 45; // [10:60]
 //Cutting angle of the graver
 beta = 105; // [30:180]
 //Angle of the gravers heel
-theta = 8; // [2:20]
+theta = 12; // [2:20]
 
 /* [Hidden] */
 
 rampa_opening = 6;
 width = 50;
 thickness = 5;
-workpiece_hole_diameter = 12.2;
+workpiece_hole_diameter = 12.4;
 workpiece_holder_height = 20;
 marking_font = "Liberation Sans";
 left = -width / 2;
